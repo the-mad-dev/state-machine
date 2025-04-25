@@ -1,0 +1,1 @@
+update $1~ set data=$2, modified_date=current_timestamp where id=$3;

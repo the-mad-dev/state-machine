@@ -1,0 +1,1 @@
+select id, data from message_history where id=$1;

@@ -1,0 +1,1 @@
+select id, data from $1~ where id=$2;

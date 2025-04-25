@@ -1,0 +1,1 @@
+delete from $1~ where id=$2;

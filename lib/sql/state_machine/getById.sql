@@ -1,0 +1,1 @@
+SELECT * from state_machine where id = $1

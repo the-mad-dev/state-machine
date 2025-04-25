@@ -1,0 +1,1 @@
+UPDATE state_machine set data = $2 where id = $1;

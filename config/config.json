@@ -1,0 +1,29 @@
+{
+    "rmq": {
+        "connection_string  ": "amqp://guest:guest@localhost:5672",
+        "messaging": {
+            "bindings": {
+                "order_updates": ["order_updates_listener"],
+                "mail_updates": ["mail_updates_listener"]
+            },
+            "exchanges": {
+                "order_updates": {
+                    "bindQueue": false,
+                    "prefetch": 1,
+                    "name": "order_updates",
+                    "clusterId": "A"
+                },
+                "mail_updates": {
+                    "bindQueue": false,
+                    "prefetch": 1,
+                    "name": "mail_updates",
+                    "clusterId": "B"
+                }
+            }
+        }
+    },
+    "postgres": {
+        "connection_string": "postgres://ecomdba:ecomdba@localhost:5432/orders",
+        "max_connections": 10
+    }
+}

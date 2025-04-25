@@ -1,0 +1,1 @@
+insert into $1~ (id, data) values ($2, $3) returning *;

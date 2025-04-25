@@ -1,0 +1,15 @@
+{
+  "dependencies": {
+    "amqplib": "^0.10.5",
+    "joi": "^17.13.3",
+    "lodash": "^4.17.21",
+    "nconf": "^0.12.1",
+    "pg-promise": "^11.10.2",
+    "rabbitmq-client": "^5.0.2",
+    "uuid": "^11.1.0"
+  },
+  "scripts": {
+    "init-state-machine": "node test.js",
+    "init-msg-consumer": "node  start-message-consumer --clusterId=B"
+  }
+}

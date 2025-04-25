@@ -1,0 +1,1 @@
+INSERT INTO state_machine (id, data) VALUES ($1, $2);

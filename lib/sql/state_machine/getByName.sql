@@ -1,0 +1,1 @@
+select * from state_machine where data->>'name' = $1;

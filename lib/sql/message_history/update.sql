@@ -1,0 +1,1 @@
+update message_history set data=$2 where id=$1;
